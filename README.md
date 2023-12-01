@@ -13,3 +13,7 @@ This is a terminal game which includes 5 different games
 ## Calc game
 
 <a href="https://asciinema.org/a/Vvb4qeiHE2zV6SUwisz5Nx0Zp" target="_blank"><img src="https://asciinema.org/a/Vvb4qeiHE2zV6SUwisz5Nx0Zp.svg" /></a>
+
+## Gcd game
+
+<a href="https://asciinema.org/a/hLIehjamZunfxvSyGmyRucdXS" target="_blank"><img src="https://asciinema.org/a/hLIehjamZunfxvSyGmyRucdXS.svg" /></a>
