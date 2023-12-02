@@ -17,3 +17,7 @@ This is a terminal game which includes 5 different games
 ## Gcd game
 
 <a href="https://asciinema.org/a/hLIehjamZunfxvSyGmyRucdXS" target="_blank"><img src="https://asciinema.org/a/hLIehjamZunfxvSyGmyRucdXS.svg" /></a>
+
+## Progression game
+
+<a href="https://asciinema.org/a/OdSTPQcoMC7SwmhK7p9OLnR3p" target="_blank"><img src="https://asciinema.org/a/OdSTPQcoMC7SwmhK7p9OLnR3p.svg" /></a>

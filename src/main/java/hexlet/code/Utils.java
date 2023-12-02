@@ -1,9 +1,13 @@
 package hexlet.code;
 
 public class Utils {
-    public static String getRandomNumber() {
+    public static int getRandomNumber() {
         final int maxRange = 100;
-        return Integer.toString((int) (Math.random() * maxRange));
+        return (int) (Math.random() * maxRange);
+    }
+
+    public static int getRandomNumber(int min, int max) {
+        return (int) (Math.random() * (max - min + 1) + min);
     }
 
     public static String getRandomOperand() {
@@ -22,5 +26,28 @@ public class Utils {
         }
 
         return "1";
+    }
+
+    public static String[][] makeProgression() {
+        final int minProgressionLength = 5;
+        final int maxProgressionLength = 10;
+        final int maxProgressionNum = 30;
+
+        int progressionLength = getRandomNumber(minProgressionLength, maxProgressionLength);
+        int progressionNum = getRandomNumber(1, maxProgressionNum);
+
+        String[] progression = new String[progressionLength];
+        int index = 0;
+
+        for (int i = progressionNum; i <= progressionNum * progressionLength; i += progressionNum) {
+            progression[index] = Integer.toString(i);
+            index++;
+        }
+
+        int hiddenNumber = getRandomNumber(0, progression.length - 1);
+        String correctAnswer = progression[hiddenNumber];
+        progression[hiddenNumber] = "..";
+
+        return new String[][] {progression, new String[] {correctAnswer}};
     }
 }

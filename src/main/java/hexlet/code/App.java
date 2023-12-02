@@ -3,19 +3,26 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
 class App {
+    private static void generateMenu() {
+        String[] games = {"Greet", "Even", "Calc", "Gcd", "Progression"};
+
+        System.out.println("Please enter the game number and press Enter.");
+
+        for (int gameNumber = 0; gameNumber < games.length; gameNumber++) {
+            System.out.println(gameNumber + 1 + " - " + games[gameNumber]);
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet");
-        System.out.println("2 - Even");
-        System.out.println("3 - Calc");
-        System.out.println("4 - Gcd");
-        System.out.println("0 - Exit");
+        generateMenu();
+
         System.out.print("Your choice: ");
         String gameNumber = scanner.next();
 
@@ -31,6 +38,8 @@ class App {
                 break;
             case "4":
                 Gcd.startGame();
+            case "5":
+                Progression.startGame();
             default:
                 break;
         }

@@ -22,7 +22,7 @@ public class Even {
         gameInfo = new String[totalAttempts][questionAndAnswer];
 
         for (int i = 0; i < totalAttempts; i++) {
-            String question = Utils.getRandomNumber();
+            String question = Integer.toString(Utils.getRandomNumber());
             gameInfo[i][0] = question;
             gameInfo[i][1] = getCorrectAnswer(question);
         }
