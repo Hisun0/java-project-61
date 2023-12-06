@@ -3,13 +3,14 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
+import hexlet.code.games.Prime;
 import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
 class App {
     private static void generateMenu() {
-        String[] games = {"Greet", "Even", "Calc", "Gcd", "Progression"};
+        String[] games = {"Greet", "Even", "Calc", "Gcd", "Progression", "Prime"};
 
         System.out.println("Please enter the game number and press Enter.");
 
@@ -40,6 +41,8 @@ class App {
                 Gcd.startGame();
             case "5":
                 Progression.startGame();
+            case "6":
+                Prime.startGame();
             default:
                 break;
         }
