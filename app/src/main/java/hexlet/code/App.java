@@ -39,10 +39,13 @@ class App {
                 break;
             case "4":
                 Gcd.startGame();
+                break;
             case "5":
                 Progression.startGame();
+                break;
             case "6":
                 Prime.startGame();
+                break;
             default:
                 break;
         }
